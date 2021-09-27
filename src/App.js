@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import TableImc from './components/TableImc';
-import FunctionWeight from './components/FunctionWeight';
-import FunctionHeight from './components/FunctionHeight';
+import TableBmi from './components/TableBmi';
+import Weight from './components/Weight';
+import Height from './components/Height';
 import Calculate from './components/Calculate';
 import Result from './components/Result';
+import Title from './components/Title';
+import './App.css';
 
 export default function App() {
   const [weight, setWeight] = useState(0);
@@ -12,25 +14,25 @@ export default function App() {
 
   const tableImc = () => {
     return (
-      <TableImc />
+      <TableBmi />
     );
   };
 
   const fWeight = (wgt, setWgt) => {
     return (
-      <FunctionWeight wgt={wgt} setWgt={setWgt} />
+      <Weight wgt={wgt} setWgt={setWgt} />
     );
   };
 
   const fHeight = (hgt, setHgt) => {
     return (
-      <FunctionHeight hgt={hgt} setHgt={setHgt} />
+      <Height hgt={hgt} setHgt={setHgt} />
     );
   };
 
   const calculate = (wgt, hgt, setRes) => {
     const calc = () => {
-      setRes(wgt / (hgt * hgt));
+      setRes(wgt / ((hgt * hgt) / 10000));
     };
 
     return (
@@ -45,7 +47,8 @@ export default function App() {
   };
 
   return (
-    <div>
+    <div className="div-app">
+      <Title />
       {fWeight(weight, setWeight)}
       {fHeight(height, setHeight)}
       {calculate(weight, height, setResult)}

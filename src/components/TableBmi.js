@@ -1,13 +1,12 @@
 import React from 'react';
 
-export default function TableImc() {
+export default function TableBmi() {
     return (
-        <table border="1"
-            style={{ borderCollapse: 'collapse' }}>
+        <table border="1">
             <thead>
                 <tr>
                     <th>Classification </th>
-                    <th>IMC</th>
+                    <th>BMI</th>
                 </tr>
             </thead>
             <tbody>
