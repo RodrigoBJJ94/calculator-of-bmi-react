@@ -15,13 +15,22 @@
   margin-bottom: 10px;
 }
 
+.div-result {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
 button {
   width: 170px;
-  height: 34px;
+  height: 38px;
   background-color: rgb(9, 100, 88);
   color: #fff;
   border: none;
-  margin-top: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 table {
@@ -36,4 +45,24 @@ th {
 td {
   padding: 4px 10px;
   text-align: center;
+}
+
+@media (max-width: 800px) {
+  .div-app {
+    font-size: 16px;
+  }
+
+  table {
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .div-app {
+    font-size: 14px;
+  }
+
+  table {
+    width: 90%;
+  }
 }
