@@ -32,7 +32,13 @@ export default function App() {
 
   const calculate = (wgt, hgt, setRes) => {
     const calc = () => {
-      setRes(wgt / ((hgt * hgt) / 10000));
+      if (wgt === 0 || wgt === '') {
+        alert('Please, inform the weight!');
+      } else if (hgt === 0 || hgt === '') {
+        alert('Please, inform the height!');
+      } else {
+        setRes(wgt / ((hgt * hgt) / 10000));
+      };
     };
 
     return (

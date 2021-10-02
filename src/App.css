@@ -47,7 +47,7 @@ td {
   text-align: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .div-app {
     font-size: 16px;
   }
@@ -57,7 +57,7 @@ td {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 320px) {
   .div-app {
     font-size: 14px;
   }
