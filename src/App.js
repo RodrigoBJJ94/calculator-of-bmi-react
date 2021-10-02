@@ -5,6 +5,7 @@ import Height from './components/Height';
 import Calculate from './components/Calculate';
 import Result from './components/Result';
 import Title from './components/Title';
+import Main from './components/Main';
 import './App.css';
 
 export default function App() {
@@ -55,11 +56,9 @@ export default function App() {
   return (
     <div className="div-app">
       <Title />
-      {fWeight(weight, setWeight)}
-      {fHeight(height, setHeight)}
-      {calculate(weight, height, setResult)}
-      {fResult(result)}
-      {tableImc()}
+      <Main fWeight={fWeight} weight={weight} setWeight={setWeight}
+        fHeight={fHeight} height={height} setHeight={setHeight} calculate={calculate}
+        setResult={setResult} fResult={fResult} result={result} tableImc={tableImc} />
     </div>
   );
 };
