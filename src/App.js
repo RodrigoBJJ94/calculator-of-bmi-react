@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import swal from 'sweetalert';
 import TableBmi from './components/TableBmi';
 import Weight from './components/Weight';
 import Height from './components/Height';
@@ -7,7 +8,6 @@ import Calculate from './components/Calculate';
 import Result from './components/Result';
 import Title from './components/Title';
 import Main from './components/Main';
-import swal from 'sweetalert';
 
 export default function App() {
   const [weight, setWeight] = useState(0);
