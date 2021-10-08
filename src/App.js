@@ -57,9 +57,11 @@ export default function App() {
   return (
     <div className="div-app">
       <Title />
-      <Main fWeight={fWeight} weight={weight} setWeight={setWeight}
+      <Main
+        fWeight={fWeight} weight={weight} setWeight={setWeight}
         fHeight={fHeight} height={height} setHeight={setHeight} calculate={calculate}
-        setResult={setResult} fResult={fResult} result={result} tableImc={tableImc} />
+        setResult={setResult} fResult={fResult} result={result} tableImc={tableImc}
+      />
     </div>
   );
 };
