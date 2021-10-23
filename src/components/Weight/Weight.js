@@ -1,15 +1,15 @@
 import React from 'react';
+import './Styles.css';
 
-export default function Weight(props) {
+export default function Weight({ weigth, setWeight }) {
     return (
         <div className="div-weight">
             <label>Weight (kg): </label>
             <input
                 type="text"
-                value={props.wgt}
+                value={weigth}
                 size="3"
-                onChange={(element) => props.setWgt(element.target.value)}
-            />
+                onChange={(element) => setWeight(element.target.value)} />
         </div>
     );
 };

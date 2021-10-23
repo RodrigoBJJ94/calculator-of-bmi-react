@@ -1,0 +1,23 @@
+button {
+    width: 170px;
+    height: 38px;
+    background-color: rgb(9, 100, 88);
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.swal-overlay {
+    background-color: rgba(9, 100, 88, 0.4);
+}
+  
+.swal-button {
+    background-color: rgb(9, 100, 88);
+}
+  
+.swal-text {
+    font-weight: bold;
+}
