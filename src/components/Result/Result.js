@@ -4,7 +4,7 @@ import './Styles.css';
 export default function Result({ result }) {
     return (
         <div className="div-result">
-            <p>Result: {result.toFixed(2)}</p>
+            {result !== 0 ? `Result: ${result.toFixed(2)}` : ''}
         </div>
     );
 };
