@@ -9,7 +9,8 @@ export default function Weight({ weigth, setWeight }) {
                 type="text"
                 value={weigth}
                 size="3"
-                onChange={(element) => setWeight(element.target.value)} />
+                onChange={(element) => setWeight(element.target.value)}
+            />
         </div>
     );
 };

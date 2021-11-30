@@ -9,7 +9,8 @@ export default function Height({ height, setHeight }) {
         type="text"
         value={height}
         size="3"
-        onChange={(element) => setHeight(element.target.value)} />
+        onChange={(element) => setHeight(element.target.value)}
+      />
     </div>
   );
 };
