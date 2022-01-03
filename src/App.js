@@ -15,11 +15,15 @@ export default function App() {
   return (
     <div className="div-app">
       <Title />
-      <Weight weigth={weight} setWeight={setWeight} />
-      <Height height={height} setHeight={setHeight} />
-      <Calculate weight={weight} height={height} setResult={setResult} />
-      <Result result={result} />
+      <Weight
+        weigth={weight} setWeight={setWeight} />
+      <Height
+        height={height} setHeight={setHeight} />
+      <Calculate
+        weight={weight} height={height} setResult={setResult} />
+      <Result
+        result={result} />
       <Table />
     </div>
   );
-}
+};
