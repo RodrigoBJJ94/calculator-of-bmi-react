@@ -4,7 +4,9 @@ import "./Styles.css";
 
 export default function Calculate({ weight, height, setResult }) {
   const calc = () => {
-    if (weight === 0 || weight === "") {
+    if ((weight === 0 || weight === "") && (height === 0 || height === "")) {
+      Swal.fire("Please, inform the weight and height!");
+    } else if (weight === 0 || weight === "") {
       Swal.fire("Please, inform the weight!");
     } else if (height === 0 || height === "") {
       Swal.fire("Please, inform the height!");

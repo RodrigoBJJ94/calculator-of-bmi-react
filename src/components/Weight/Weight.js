@@ -11,8 +11,6 @@ export default function Weight({ weigth, setWeight }) {
       <input
         className="weight-input"
         type="number"
-        min={2}
-        max={500}
         value={weigth}
         onChange={(element) => setWeight(element.target.value)}
       />

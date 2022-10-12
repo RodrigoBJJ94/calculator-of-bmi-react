@@ -1,9 +1,10 @@
 .button-calculate {
-  width: 10vw;
+  width: 7.9vw;
   height: 4.4vh;
   background-color: #096458;
   color: #FFFFFF;
   border: none;
+  border-radius: 2px;
   margin-top: 2vh;
   margin-bottom: 1vh;
   font-size: 20px;
@@ -19,4 +20,26 @@
 .swal2-confirm {
   background-color: #096458 !important;
   box-shadow: none !important;
+}
+
+@media (max-width: 800px) {
+  .button-calculate {
+    width: 36vw;
+    font-size: 17px;
+  }
+
+  .swal2-title {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .button-calculate {
+    height: 5vh;
+    font-size: 16px;
+  }
+
+  .swal2-title {
+    font-size: 16px !important;
+  }
 }

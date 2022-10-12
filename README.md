@@ -1,2 +1,1 @@
-# calculator-of-bmi-react-redux
- calculator-of-bmi-react-redux
+# Calculator of BMI developed in React

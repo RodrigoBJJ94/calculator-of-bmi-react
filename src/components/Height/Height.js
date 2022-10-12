@@ -11,8 +11,6 @@ export default function Height({ height, setHeight }) {
       <input
         className="height-input"
         type="number"
-        min={40}
-        max={300}
         value={height}
         onChange={(element) => setHeight(element.target.value)}
       />

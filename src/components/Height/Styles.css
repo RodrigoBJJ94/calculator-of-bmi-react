@@ -14,3 +14,23 @@
   margin-left: 0.5vw;
   padding-left: 0.1vw;
 }
+
+@media (max-width: 800px) {
+  .height-label {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  
+  .height-input {
+    width: 10vw;
+    margin-left: 2vw;
+    padding-left: 0.5vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .height-label {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
