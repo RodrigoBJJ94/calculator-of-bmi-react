@@ -1,14 +1,19 @@
-import React from 'react';
-import './Styles.css';
+import React from "react";
+import "./Styles.css";
 
 export default function Height({ height, setHeight }) {
   return (
-    <div className="div-height">
-      <label>Height (cm): </label>
+    <div className="height-container">
+      <label
+        className="height-label">
+        Height (cm):
+      </label>
       <input
-        type="text"
+        className="height-input"
+        type="number"
+        min={40}
+        max={300}
         value={height}
-        size="3"
         onChange={(element) => setHeight(element.target.value)}
       />
     </div>

@@ -1,0 +1,12 @@
+.table-container {
+  overflow: auto;
+  border-radius: 6px;
+  border: 0.6px solid #000000;
+  margin-top: 3.5vh;
+}
+
+table {
+  border-collapse: collapse;
+  border-style: hidden;
+  border-spacing: 0;
+}

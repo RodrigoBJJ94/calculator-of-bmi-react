@@ -1,3 +1,16 @@
-.div-weight {
-    margin-bottom: 10px;
+.weight-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1vh;
+}
+
+.weight-label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.weight-input {
+  width: 2vw;
+  margin-left: 0.5vw;
+  padding-left: 0.1vw;
 }

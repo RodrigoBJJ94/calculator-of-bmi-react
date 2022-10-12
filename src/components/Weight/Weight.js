@@ -1,16 +1,21 @@
-import React from 'react';
-import './Styles.css';
+import React from "react";
+import "./Styles.css";
 
 export default function Weight({ weigth, setWeight }) {
-    return (
-        <div className="div-weight">
-            <label>Weight (kg): </label>
-            <input
-                type="text"
-                value={weigth}
-                size="3"
-                onChange={(element) => setWeight(element.target.value)}
-            />
-        </div>
-    );
+  return (
+    <div className="weight-container">
+      <label
+        className="weight-label">
+        Weight (kg):
+      </label>
+      <input
+        className="weight-input"
+        type="number"
+        min={2}
+        max={500}
+        value={weigth}
+        onChange={(element) => setWeight(element.target.value)}
+      />
+    </div>
+  );
 };
