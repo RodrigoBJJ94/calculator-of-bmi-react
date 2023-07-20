@@ -1,11 +1,19 @@
 import React from "react";
+import { useContextAPI } from "../../context/ContextAPI";
 import "./Styles.css";
 
-export default function Result({ result }) {
+export default function Result() {
+
+  const { result } = useContextAPI();
+
   return (
-    <div className="result-container">
-      <p className="result-text">
-        {result !== 0 ? `Result: ${result.toFixed(2)}` : ""}
+    <div className="resultContainer">
+      <p className="resultText">
+        {
+          result !== 0
+            ? `Result: ${result.toFixed(2)}`
+            : ""
+        }
       </p>
     </div>
   );

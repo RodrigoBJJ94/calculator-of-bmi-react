@@ -1,45 +1,41 @@
-.button-calculate {
-  width: 7.9vw;
-  height: 4.4vh;
-  background-color: #096458;
-  color: #FFFFFF;
+.buttonCalculate {
+  width: 8vw;
+  height: 5.5vh;
+  margin-top: 4.8vh;
   border: none;
   border-radius: 2px;
-  margin-top: 2vh;
-  margin-bottom: 1vh;
   font-size: 20px;
   font-weight: 700;
+  background-color: #096458;
+  color: #FFFFFF;
+  cursor: pointer;
 }
 
-.swal2-title {
-  color: #000000 !important;
-  font-size: 22px !important;
-  font-weight: 500 !important;
+.buttonCalculate:hover {
+  background-color: #03332D;
 }
 
-.swal2-confirm {
-  background-color: #096458 !important;
-  box-shadow: none !important;
+@media (max-width: 1400px) {
+  .buttonCalculate {
+    font-size: 18px;
+  }
 }
 
-@media (max-width: 800px) {
-  .button-calculate {
-    width: 36vw;
+@media (max-width: 1280px) {
+  .buttonCalculate {
     font-size: 17px;
   }
+}
 
-  .swal2-title {
-    font-size: 18px !important;
+@media (max-width: 420px) {
+  .buttonCalculate {
+    width: 25vw;
+    font-size: 16px;
   }
 }
 
-@media (max-width: 400px) {
-  .button-calculate {
-    height: 5vh;
-    font-size: 16px;
-  }
-
-  .swal2-title {
-    font-size: 16px !important;
+@media (max-width: 380px) {
+  .buttonCalculate {
+    font-size: 15px;
   }
 }

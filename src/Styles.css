@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: "Lato", sans-serif;
+}
+
+.weightAndHeightContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 11vw;
+  margin-bottom: 1.2vh;
+}
+
+.label {
+  font-size: 19px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.input {
+  width: 3vw;
+  padding: 0.3vh 0.2vw;
+  font-size: 16px;
+  border: 1px solid #096458;
+}
+
+.swal2-title {
+  color: #000000 !important;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+}
+
+.swal2-confirm {
+  background-color: #096458 !important;
+  box-shadow: none !important;
+  color: #FFFFFF !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+@media (max-width: 1400px) {
+  .weightAndHeightContainer {
+    width: 12vw;
+  }
+
+  .label {
+    font-size: 18px;
+  }
+  
+  .input {
+    padding: 0.32vh 0.3vw;
+    font-size: 15.5px;
+  }
+  
+  .swal2-title {
+    font-size: 19px !important;
+  }
+  
+  .swal2-confirm {
+    font-size: 13.5px !important;
+  }
+}
+
+@media (max-width: 1280px) {
+  .weightAndHeightContainer {
+    width: 12.5vw;
+  }
+
+  .label {
+    font-size: 17px;
+  }
+  
+  .input {
+    width: 3.1vw;
+    padding: 0.35vh 0.35vw;
+    font-size: 15px;
+  }
+  
+  .swal2-title {
+    font-size: 18px !important;
+  }
+  
+  .swal2-confirm {
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .weightAndHeightContainer {
+    width: 36vw;
+  }
+
+  .label {
+    font-size: 16px;
+  }
+  
+  .input {
+    width: 10vw;
+    padding: 0.32vh 0.7vw;
+    font-size: 15.5px;
+  }
+  
+  .swal2-title {
+    font-size: 16px !important;
+  }
+  
+  .swal2-confirm {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .weightAndHeightContainer {
+    width: 37vw;
+  }
+
+  .label {
+    font-size: 15px;
+  }
+  
+  .input {
+    width: 10.2vw;
+    font-size: 14.5px;
+  }
+  
+  .swal2-title {
+    font-size: 15.5px !important;
+  }
+  
+  .swal2-confirm {
+    font-size: 11.5px !important;
+  }
+}

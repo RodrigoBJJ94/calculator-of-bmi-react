@@ -1,10 +1,17 @@
 import React from "react";
+import { useContextAPI } from "../../context/ContextAPI";
 import Swal from "sweetalert2";
 import "./Styles.css";
 
-export default function Calculate({ weight, height, setResult }) {
-  const calc = () => {
-    if ((weight === 0 || weight === "") && (height === 0 || height === "")) {
+export default function Calculate() {
+
+  const { weight, height, setResult } = useContextAPI();
+
+  const calculate = () => {
+    if (
+      (weight === 0 || weight === "")
+      && (height === 0 || height === "")
+    ) {
       Swal.fire("Please, inform the weight and height!");
     } else if (weight === 0 || weight === "") {
       Swal.fire("Please, inform the weight!");
@@ -18,8 +25,10 @@ export default function Calculate({ weight, height, setResult }) {
   return (
     <div>
       <button
-        className="button-calculate"
-        onClick={calc}>
+        className="buttonCalculate"
+        onClick={() => {
+          calculate();
+        }}>
         Calculate
       </button>
     </div>

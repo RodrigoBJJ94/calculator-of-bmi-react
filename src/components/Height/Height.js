@@ -1,15 +1,19 @@
 import React from "react";
-import "./Styles.css";
+import { useContextAPI } from "../../context/ContextAPI";
+import "../../Styles.css";
 
-export default function Height({ height, setHeight }) {
+export default function Height() {
+
+  const { height, setHeight } = useContextAPI();
+
   return (
-    <div className="height-container">
+    <div className="weightAndHeightContainer">
       <label
-        className="height-label">
+        className="label">
         Height (cm):
       </label>
       <input
-        className="height-input"
+        className="input"
         type="number"
         value={height}
         onChange={(element) => setHeight(element.target.value)}

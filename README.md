@@ -1,1 +1,3 @@
-# Calculator of BMI developed in React
+# Calculator of BMI
+
+Developed with React, JavaScript and CSS

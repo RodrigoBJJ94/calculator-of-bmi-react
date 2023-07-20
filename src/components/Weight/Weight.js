@@ -1,15 +1,19 @@
 import React from "react";
-import "./Styles.css";
+import { useContextAPI } from "../../context/ContextAPI";
+import "../../Styles.css";
 
-export default function Weight({ weigth, setWeight }) {
+export default function Weight() {
+
+  const { weigth, setWeight } = useContextAPI();
+
   return (
-    <div className="weight-container">
+    <div className="weightAndHeightContainer">
       <label
-        className="weight-label">
+        className="label">
         Weight (kg):
       </label>
       <input
-        className="weight-input"
+        className="input"
         type="number"
         value={weigth}
         onChange={(element) => setWeight(element.target.value)}
